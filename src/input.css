@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer components {
+    .card {
+        @apply bg-violet-200 w-[30rem] h-80 flex flex-col justify-evenly rounded
+    }
+
+    .next_button {
+        @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
+        focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 
+        me-2 mb-2 focus:outline-none;
+    }
+    
+    .prev_button {
+        @apply focus:outline-none text-white 
+       bg-pink-700 
+       hover:bg-red-900 
+       focus:ring-4 focus:ring-red-300 
+       font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 
+       dark:bg-pink-700 
+       dark:hover:bg-red-900 
+       dark:focus:ring-pink-700;
+    }
+
+    .review_title {
+        @apply font-semibold;
+    }
+
+    .review_item {
+        @apply w-80;
+    }
+}
+
+@layer base {
+    input {
+        @apply border p-2 rounded w-80 bg-[white];
+    }
+
+    form {
+        @apply flex flex-col space-y-4 items-center;
+    }
+
+    h1 {
+        @apply text-center text-[20px];
+    }
+
+    p {
+        @apply text-gray-900;
+    }
+}

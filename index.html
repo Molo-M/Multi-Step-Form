@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Multi-Step Form</title>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-600">
+    <div class="card">
+        <h1 class="">Personal Information:</h1>
+        <form action="" class="">
+            <label for="names" class="sr-only">Name</label>
+            <input type="text" class="" id="names" placeholder="Enter your Full Name:">
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" class="" id="email" placeholder="Enter your Email:">
+            <label for="number" class="sr-only">Age</label>
+            <input type="number" class="" id="age" placeholder="Enter your Age:">
+            <div class="button_container w-80 flex  justify-end">
+                <button type="button" class="next_button" onclick="goNext()">Next</button>
+            </div>
+        </form>
+    </div>
+    <div class="card hidden">
+        <h1>Account Details</h1>
+        <form action="">
+            <label for="username" class="sr-only">username</label>
+            <input type="text" class="" id="username" placeholder="Enter a Username:">
+            <label for="password" class="sr-only">password</label>
+            <input type="password" class="" id="password" placeholder="Enter a Password:">
+            <label for="conf_pass" class="sr-only">conf_pass</label>
+            <input type="password" class="" id="conf_pass" placeholder="Confirm your Password:">
+            <div class="button_container w-80 flex  justify-between">
+                <button type="button" class="prev_button" onclick="goBack()">Previous</button>
+                <button type="button" class="next_button" onclick="goNext()">Next</button>
+            </div>
+        </form>
+    </div>
+    <div class="card items-center hidden">
+        <h1>Review and Submit</h1>
+        <div class="review_item">
+            <p class="review_title">Full Name:</p>
+            <p id="review-fullName"></p>
+        </div>
+        <div class="review_item">
+            <p class="review_title">Email:</p>
+            <p id="review-email"></p>
+        </div>
+        <div class="review_item">
+            <p class="review_title">Age:</p>
+            <p id="review-age"></p>
+        </div>
+        <div class="review_item">
+            <p class="review_title">Username:</p>
+            <p id="review-username"></p>
+        </div>
+        <div class="button_container w-80 flex  justify-between">
+            <button type="button" class="prev_button" onclick="goBack()">Go Back</button>
+            <button type="button" class="next_button" onclick="submit()">Submit</button>
+        </div>
+    </div>
+    <div class="card hidden">
+        <h1 class="text-center text-20">Registration Complete!</h1>
+    </div>
+    <script src="src/app.js"></script>
+</body>
+</html>
