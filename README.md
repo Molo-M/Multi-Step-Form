@@ -1,5 +1,7 @@
 # 🔧 Project: Multi-Step Form (Vanilla JS + TailwindCSS)
 
+View the project **live** at: [https://molo-m.github.io/Multi-Step-Form/](https://molo-m.github.io/Multi-Step-Form/)
+
 ### 🧠 Project Goal:
 
 Create a **3-step form** that collects user data across multiple screens, with **form validation**, **state persistence**, and a **final confirmation step**.
@@ -113,18 +115,7 @@ You’ll update this object on each valid field input.
 * When “Submit” is clicked:
 
   * Show a final success message like “🎉 Registration Complete!”
-  * Optional: Save data to `localStorage`
-
 ---
-
-## 🌍 Optional Enhancements
-
-* Add a “Progress Indicator” (Step 1 / 3, Step 2 / 3, etc.)
-* Save progress in `localStorage` (reload-safe)
-* Mobile responsiveness (Tailwind already helps with this)
-
----
-
 ## ✅ Deliverables Checklist
 
 * [ ] Step navigation works
